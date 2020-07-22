@@ -1,2 +1,17 @@
 server:
   port: 8755
+spring:
+  # freemarker模板引擎
+  freemarker:
+    allow-request-override: false
+    allow-session-override: true
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html;
+    expose-request-attributes: true
+    expose-session-attributes: true
+    template-loader-path: classpath:/templates/
+    prefix:
+    suffix: .ftl
+    request-context-attribute: request
