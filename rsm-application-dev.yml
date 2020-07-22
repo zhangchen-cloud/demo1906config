@@ -12,6 +12,5 @@ spring:
     expose-request-attributes: true
     expose-session-attributes: true
     template-loader-path: classpath:/templates/
-    prefix:
     suffix: .ftl
     request-context-attribute: request
