@@ -5,6 +5,12 @@ spring:
     host: localhost
     database: 0
     port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 500
+        max-wait: -1
+        min-idle: 0
   # freemarker模板引擎
   freemarker:
     allow-request-override: false
