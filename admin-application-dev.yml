@@ -1,6 +1,3 @@
-rocketmq:
-  servername: localhost:9876
-  defaultname: demo1906
 server:
   port: 8751
 spring:
