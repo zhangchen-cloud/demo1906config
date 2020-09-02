@@ -1,6 +1,16 @@
 server:
   port: 8751
 spring:
+  dubbo:
+    application:
+      # 名字必须与项目名一致
+      name: mr_admin
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    consumer:
+      check: false
+#      如果你的Spring容器是懒加载的，或者通过API编程延迟引用服务，请关闭check，否则服务临时不可用时，会抛出异常，拿到null引用，如果check=false，总是会返回引用，当服务恢复时，能自动连上。
+
   redis:
     host: localhost
     database: 0
